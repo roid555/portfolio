@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full h-screen flex flex-col items-center justify-center text-center gap-8 sm:gap-16 px-4 sm:px-8 lg:px-16 py-8  ">
+    <section className="w-full h-screen flex flex-col  justify-center items-start text-center   ">
       {/* Title + Image */}
-      <div className="flex border-solid border-red  gap-8 mb-8 sm:mb-16 flex-col sm:flex-row sm:justify-center sm:items-center sm:space-x-8 sm:space-y-0 ">
-        <div className="mb-8 space-y-4 sm:mb-0">
-          <p className="font-jost text-6xl sm:text-8xl leading-tight text-left">
-            Roi <br /> Dahan
+      <div className="flex justify-between items-center flex-col-reverse md:flex-row items-center md:justify-between w-full">
+        <div className="mb-8 space-y-4 sm:mb-0 max-w-xl">
+          <p className=" font-jost text-6xl sm:text-8xl leading-tight text-left mb-8 md:mb-0">
+            Hello, I'm <br /> Roi Dahan
           </p>
           {/* Paragraph */}
           <p className=" text-lg sm:text-xl max-w-2xl mb-6 text-left">
@@ -16,15 +16,21 @@ export default function Hero() {
             digital experiences. Explore my projects and get to know more about
             me.
           </p>
+          <div className="flex justify-start">
+            <button className=" bg-purple-600 text-white px-6 py-3 rounded-md hover:bg-purple-700 transition items-start">
+              View My Work
+            </button>
+          </div>
         </div>
-
-        {/* <Image
-          src="/mock-image.jpg"
-          alt="Mock image"
-          width={800}
-          height={500}
-          className="rounded-full shadow-md"
-        /> */}
+        <div className="w-80 md:w-[400px] rounded-4xl shadow-2xl ">
+          {/* <Image
+            src="/bg.png"
+            alt="Mock image"
+            width={400}
+            height={500}
+            className="rounded-4xl shadow-2xl"
+          /> */}
+        </div>
       </div>
     </section>
   );
