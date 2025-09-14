@@ -1,32 +1,43 @@
 import React from "react";
-import Header from "@/components/header/header";
-import Hero from "@/components/hero/hero-section";
-import ProjectSection from "@/components/projects/project-section";
+import Header from "@/sections/header/header";
+import Hero from "@/sections/hero/hero-section";
+import ProjectSection from "@/sections/projects/project-section";
 import { div } from "framer-motion/client";
-import ContactMe from "@/components/contact/contact-section";
-import Footer from "@/components/footer/footer-section";
+import ContactMe from "@/sections/contact/contact-section";
+import Footer from "@/sections/footer/footer-section";
+import AboutSection from "@/sections/about/about-section";
+import SkillSection from "@/sections/skills/skill-section";
 
 export default function Home() {
   return (
-    <div className=" font-jost bg-gray-200 text-shadow-lg">
+    <div className=" bg-gray-200 ">
       {/* Header */}
-      <div className=" text-black px-46">
+      <div className=" text-black px-46 mx-4 py-0">
         <Header></Header>
       </div>
       {/* Body */}
       <div className=" px-4">
         {/* Hero Section */}
-        <div className=" text-white rounded-2xl bg-gradient-to-tr px-46 from-gray-200 via-gray-500 to-gray-200 ">
+        <div className=" my-gray-bg ">
           <Hero></Hero>
         </div>
-        <div id="projects" className="px-46 py-20 text-black">
+        {/* About Section */}
+        <div id="about" className="my-white-bg">
+          <AboutSection />
+        </div>
+        {/* Skills Section */}
+        <div className="my-gray-bg">
+          <SkillSection />
+        </div>
+        {/* Projects Section */}
+        <div id="projects" className="my-white-bg py-50 ">
           <ProjectSection />
         </div>
-        <div className="text-white rounded-2xl bg-gradient-to-tr px-46 from-gray-200 via-gray-500 to-gray-200 ">
+        <div className="my-gray-bg ">
           <ContactMe />
         </div>
         {/* Footer */}
-        <div className=" py-3 text-black">
+        <div className="my-white-bg">
           <Footer />
         </div>
       </div>

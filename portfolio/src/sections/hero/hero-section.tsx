@@ -22,13 +22,13 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="w-80 md:w-[400px] rounded-4xl shadow-2xl ">
+        <div className=" md:w-[500px] xl:w-[800px] mb-8 flex justify-center ">
           {/* <Image
-            src="/bg.png"
+            src="/hero4.jpg"
             alt="Mock image"
-            width={400}
+            width={500}
             height={500}
-            className="rounded-4xl shadow-2xl"
+            className="rounded-full shadow-2xl "
           /> */}
         </div>
       </div>

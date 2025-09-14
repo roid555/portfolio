@@ -24,5 +24,18 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+
+  text-shadow: var(--text-shadow-lg);
+}
+
+.my-gray-bg {
+  @apply text-white rounded-2xl bg-gradient-to-tr px-46;
+  /* @apply dark:from-gray-800 dark:via-gray-600 dark:to-gray-800; */
+  @apply from-gray-200 via-gray-500 to-gray-200;
+  /* @apply mask-y-from-92% mask-y-to-98% mask-x-from-92% mask-x-to-99%; */
+}
+
+.my-white-bg {
+  @apply text-black rounded-2xl px-46;
 }

@@ -4,7 +4,7 @@ export default function NavBar() {
     <nav className=" flex justify-between items-center  ">
       <div className="flex items-center ">
         <Image
-          src="/logo.png"
+          src="/logo1.png"
           alt="Logo"
           width={27}
           height={27}
